@@ -13,6 +13,6 @@
 .navbar {
     font-size: 35px;
     }
-.navbar-brand{
-    background-color: #5bc0de;
+.list{
+    list-style-type: none;
 }

@@ -2,17 +2,21 @@ import React from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
-import finallogo from "../../img/finallogo.png"; 
+import finallogo from "../../img/finallogo.png";
+
 //create your first component
 const Home = () => {
   return (
     <div className="body">
       <nav className="navbar navbar-expand-lg bg-info navbar-dark">
         <div className="container-fluid">
-          <img  className="navbar-brand" src="finallogo.png" style={{width:150,height:150}}></img>
-         
+          <img
+            className="navbar-brand"
+            src="finallogo.png"
+            style={{ width: 150, height: 150 }}
+          ></img>
+
           <div className="collapse navbar-collapse" id="navbarNav">
-      
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
@@ -31,8 +35,7 @@ const Home = () => {
               </li>
             </ul>
           </div>
-          </div>
-      
+        </div>
       </nav>{" "}
       {/*Aqui termina el Navbar  */}
       <div className="banner">
@@ -72,6 +75,22 @@ const Home = () => {
           <div className="col-md-3 p-3">
             <div className="card" style={{ width: 300, height: 430 }}>
               <img
+                src="https://ae01.alicdn.com/kf/HTB1Vw7nbovrK1RjSszfq6xJNVXaq/Fashion-Pet-Cat-Costume-Summer-Cat-Vest-Hoodie-Cozy-Mascoats-Gotos-Clothes-for-Cats-Katten-Coat.jpg_640x620.jpg"
+                alt=""
+                style={{ width: 298, height: 300 }}
+              />
+              <div className="card-body text-center">
+                <h5 className="card-title">Fashion Pet Cat Pikachu Costume</h5>
+
+                <a href="#" className="btn btn-primary text-center">
+                  Shop Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-3 p-3">
+            <div className="card" style={{ width: 300, height: 430 }}>
+              <img
                 src="https://ae01.alicdn.com/kf/H8b0f024ef0dc4a168cedfa576e70caa7e/Bathroom-Puppy-Big-Dog-Cat-Bath-Massage-Gloves-Brush-Soft-Safety-Silicone-Pet-Accessories-for-Dogs.jpg_640x640.jpg"
                 alt=""
                 style={{ width: 280, height: 300 }}
@@ -103,28 +122,61 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 p-3">
-            <div className="card" style={{ width: 300, height: 430 }}>
-              <img
-                src="https://ae01.alicdn.com/kf/HTB1Vw7nbovrK1RjSszfq6xJNVXaq/Fashion-Pet-Cat-Costume-Summer-Cat-Vest-Hoodie-Cozy-Mascoats-Gotos-Clothes-for-Cats-Katten-Coat.jpg_640x620.jpg"
-                alt=""
-                style={{ width: 298, height: 300 }}
-              />
-              <div className="card-body text-center">
-                <h5 className="card-title">Fashion Pet Cat Pikachu Costume</h5>
-
-                <a href="#" className="btn btn-primary text-center">
-                  Shop Now
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div> {/*Aqui termina el  MainProducts  */}
-     
+      </div>{" "}
+      {/*Aqui termina el  MainProducts  */}
+      <footer
+        className="text-center bg-info text-white"
+        style={{ backgroundColor: "white" }}
+      >
+        <div className="container pt-4">
+          <section className="mb-4">
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i ClassName="fab fa-facebook-f"></i>
+            </a>
 
-     </div>
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
 
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i className="fab fa-facebook"></i>
+            </a>
+
+            <a
+              className="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+          </section>
+        </div>
+
+        <div className="text-center text-dark p-3">
+          © 2022 Copyright:
+          <a className="text-dark" href="https://">
+            serviciosS&Gpetshop.com
+          </a>
+        </div>
+      </footer>
+    </div>
   );
 };
 
